@@ -1,16 +1,74 @@
-# Projeto2-Clean-Architecture-Aprofunda
-Segundo projeto do bootcamp Aprofunda Preta Lab - API Clean Architecture
+# 📚 Projeto2-Clean-Architecture-Aprofunda: API de Gerenciamento de Textos
 
-API simples criada para estudo, utilizando:
+## 🚀 Tecnologias Utilizadas
 
-- TypeScript
-- Express
-- UUID
-- CORS
-- Clean Architecture
+* Node.js
+* TypeScript
+* Express
+* UUID
+* Cors
 
-CONSIDERAÇÕES:
-Achei interessante a implementação do Clen Ar. nesse projeto, apesar de entender que a depender dos tipos de projeto, não será necessário uam arqutetura tão robusta, mas para sistemas medio e grande porte ou até mesmo produtos com intenções de escala, se faz fundamental o uso da arquitetura limpa :)
+## ⚙️ Como rodar o projeto
+
+1. **Clone o repositório**
+
+   ```bash
+   git clone https://github.com/jessica-leoa/Projeto2-Clean-Architecture-Aprofunda.git
+   ```
+
+2. **Acesse a pasta do projeto**
+
+   ```bash
+   cd nome-do-repositorio
+   ```
+
+3. **Instale as dependências**
+
+   ```bash
+   npm install
+   ```
+
+4. **Inicie o servidor**
+
+   ```bash
+   npm run dev
+   ```
+
+5. O servidor estará rodando em:
+
+   ```
+   http://localhost:3000
+   ```
+
+## 🧪 Como testar as rotas (Postman ou Thunder Client)
+
+### 🔸 Criar um texto (POST)
+
+* **Rota:** `http://localhost:3000/texts`
+* **Método:** POST
+* **Body (JSON):**
+
+  ```json
+  {
+    "title": "Meu primeiro texto",
+    "content": "Este é o conteúdo do texto.",
+    "status": "draft",
+    "author": "seu nome"
+  }
+  ```
+
+### 🔸 Listar todos os textos (GET)
+
+* **Rota:** `http://localhost:3000/texts`
+* **Método:** GET
+
+## 🎯 Objetivo da API
+
+Esta API tem como objetivo gerenciar textos criados por usuários. Ela permite o cadastro de textos com título, conteúdo, status e autor, além de possibilitar a listagem de todos os textos cadastrados. Ideal para projetos iniciais de estudo com foco em back-end, CRUD e organização de código em camadas (MVC + Services + Factory + Memory Storage).
+
+---
+
+Se quiser, posso criar e salvar esse `README.md` para você! Deseja?
 
 Método GET:
 
