@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Segundo projeto do bootcamp Aprofunda Preta Lab",
   "main": "index.js",
- "scripts": {
-  "dev": "ts-node-dev --respawn src/index.ts",
-  "start": "node dist/index.js",
-  "build": "tsc"
-},
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "test": "jest --config jest.config.js",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jessica-leoa/Projeto2-Clean-Architecture-Aprofunda.git"
@@ -22,13 +25,18 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
+    "supertest": "^7.1.4",
     "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.15",
+    "@types/supertest": "^6.0.3",
     "@types/uuid": "^10.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.3"
   }

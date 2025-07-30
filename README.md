@@ -78,3 +78,6 @@ Método POST:
 
 ![Método post](screenshots/post.png)
 
+Teste com Jest e Supertest
+
+![Teste com Jest](screenshots/test.png)
